@@ -27,21 +27,21 @@
                         </div>
                     </div>
                     <div>
-                        <input type="radio" name="q1" value="男性"> 男性
+                        <input type="radio" name="gender" value="男性 {{ old('gender') == '男性' ? 'checked' : '' }}"> 男性
                     </div>
                     <div>
-                    <input type="radio" name="q1" value="女性"> 女性
+                    <input type="radio" name="gender" value="女性 {{ old('gender') == '女性' ? 'checked' : '' }}"> 女性
                     </div>
                     <div class="form-group row">
-                        <label class="col-md-2" for="body">趣味</label>
+                        <label class="col-md-2" for="hobby">趣味</label>
                         <div class="col-md-10">
-                            <textarea class="form-control" name="body" rows="5">{{ old('body') }}</textarea>
+                            <textarea class="form-control" name="hobby" rows="5">{{ old('body') }}</textarea>
                         </div>
                     </div>
                     <div class="form-group row">
-                        <label class="col-md-2" for="body">自己紹介欄</label>
+                        <label class="col-md-2" for="introduction">自己紹介欄</label>
                         <div class="col-md-10">
-                            <textarea class="form-control" name="body" rows="10">{{ old('body') }}</textarea>
+                            <textarea class="form-control" name="introduction" rows="10">{{ old('body') }}</textarea>
                         </div>
                     </div>
                     {{ csrf_field() }}
