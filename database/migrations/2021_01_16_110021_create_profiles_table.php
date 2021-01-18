@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateProfileTable extends Migration
+class CreateProfilesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,10 +13,10 @@ class CreateProfileTable extends Migration
      */
     public function up()
     {
-        Schema::create('profile', function (Blueprint $table) {
+        Schema::create('profiles', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('name'); // ニュースのタイトルを保存するカラム
-            $table->string('gender');  // ニュースの本文を保存するカラム
+            $table->string('name'); 
+            $table->string('gender');  
             $table->string('hobby');
             $table->string('introduction');
             $table->timestamps();
@@ -30,6 +30,6 @@ class CreateProfileTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('profile');
+        Schema::dropIfExists('profiles');
     }
 }
