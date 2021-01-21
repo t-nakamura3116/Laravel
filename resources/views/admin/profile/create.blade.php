@@ -30,7 +30,7 @@
                         <input type="radio" name="gender" value="男性 {{ old('gender') == '男性' ? 'checked' : '' }}"> 男性
                     </div>
                     <div>
-                    <input type="radio" name="gender" value="女性 {{ old('gender') == '女性' ? 'checked' : '' }}"> 女性
+                        <input type="radio" name="gender" value="女性 {{ old('gender') == '女性' ? 'checked' : '' }}"> 女性
                     </div>
                     <div class="form-group row">
                         <label class="col-md-2" for="hobby">趣味</label>
