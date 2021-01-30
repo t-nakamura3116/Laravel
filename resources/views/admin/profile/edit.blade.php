@@ -21,10 +21,10 @@
                         </div>
                     </div>
                     <div>
-                        <input type="radio" name="gender" value="男性 {{ $profile_form->gender == '男性' ? 'checked' : '' }}">
+                        <input type="radio" name="gender" id="男性" value="男性 {{ $profile_form->gender == '男性' ? 'checked' : '' }}">男性
                     </div>
                     <div>
-                        <input type="radio" name="gender" value="女性 {{ $profile_form->gender == '女性' ? 'checked' : '' }}">
+                        <input type="radio" name="gender" id="女性" value="女性 {{ $profile_form->gender == '女性' ? 'checked' : '' }}">女性
                     </div>
                     <div class="form-group row">
                         <label class="col-md-2" for="hobby">趣味</label>
